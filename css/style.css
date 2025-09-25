@@ -1,0 +1,115 @@
+h1,
+p {
+  font-family: "Pacifico", cursive;
+}
+
+body {
+  background: url("/img/background/jasmine.jpg") no-repeat fixed;
+  background-size: cover;
+}
+
+.Love {
+  background: url("/img/background/vintage.jpg") no-repeat fixed;
+  background-size: cover;
+  width: 500px;
+  height: 550px;
+  margin: 30px auto;
+  border-radius: 30px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.Love__ttl {
+  font-size: 52px;
+}
+
+.Love__ttl:hover {
+  opacity: 0.8;
+}
+
+.Love__txt {
+  color: #414141ff;
+  animation: blink 0.7s infinite;
+  animation: shake 1s infinite;
+  padding: 0 20px;
+  margin: 0;
+}
+
+@keyframes shake {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(3deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  75% {
+    transform: rotate(-3deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.Love__txt:hover {
+  opacity: 0.8;
+}
+
+.Love__img {
+  width: 300px;
+  height: auto;
+  object-fit: contain;
+}
+
+.Love__img img {
+  width: 300px;
+  height: auto;
+  animation: float 3s ease-in-out infinite;
+  border-radius: 10px;
+  
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .Love {
+    width: 380px;
+    height: 480px;
+    margin: 15px auto 20px;
+    padding-top: 30px;
+    gap: 15px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .Love {
+    width: 300px;
+    height: 380px;
+  }
+
+  .Love__txt {
+    font-size: 14px;
+  }
+
+  .Love__img {
+    width: 200px;
+  }
+
+  .Love__img img {
+    width: 200px;
+  }
+}
